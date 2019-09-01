@@ -14,10 +14,15 @@ class MathsTest(unittest.TestCase):
         ''' Tests the fibonacci function. '''
         result =  maths.fibonacci(5)
         self.assertEqual(result, 8, "")
-    
+    '''
     def test_convert_base(self):
         result = maths.convert_base(8, 2)
         self.assertEqual(result,"1000", "")
+        '''
+    def test_factorial(self):
+        result = maths.factorial(3)
+        self.assertEqual(result, 6, "failed")
+        
 
 
 # This allows running the unit tests from the command line (python test_maths.py)
